@@ -11,6 +11,15 @@ set expandtab
 set nu
 set t_Co=256
 
+" turn on NERDTREE on startup 
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+" buffer to remember last edited line
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
+
 " vundle below
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
