@@ -36,3 +36,6 @@ echo copying config files to home directory...
 ln -s ~/git/config-files/.profile ~/.profile
 ln -s ~/git/config-files/.vimrc ~/.vimrc
 ln -s ~/git/config-files/.zshrc ~/.zshrc
+
+# install tools 
+apt-get install vim build-essentials zsh terminator cmake 

@@ -19,6 +19,9 @@ Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'Wombat'
 Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -74,3 +77,9 @@ autocmd VimEnter * wincmd p
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
+
+" clipboard
+set clipboard=unnamedplus
+
+" markdown preview
+let vim_markdown_preview_github=1
