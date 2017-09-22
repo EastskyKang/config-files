@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'majutsushi/tagbar'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -88,3 +89,6 @@ let vim_markdown_preview_github=1
 
 " nerdtree mouse input
 let g:NERDTreeMouseMode=3 
+
+" turn on Tagbar
+autocmd VimEnter * Tagbar
