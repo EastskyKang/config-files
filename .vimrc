@@ -69,6 +69,8 @@ set softtabstop=4
 set expandtab
 set nu
 
+set mouse=a
+
 " turn on NERDTREE on startup 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
@@ -83,3 +85,6 @@ set clipboard=unnamedplus
 
 " markdown preview
 let vim_markdown_preview_github=1
+
+" nerdtree mouse input
+let g:NERDTreeMouseMode=3 
