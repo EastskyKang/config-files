@@ -85,5 +85,5 @@ export DEFAULT_USER="kangdongho"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="~/usr/local/bin/vim"
-alias ctags="~/usr/local/bin/ctags"
+alias vim="/usr/local/bin/vim"
+alias ctags="/usr/local/bin/ctags"
