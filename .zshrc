@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/kangdongho/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -85,5 +85,7 @@ export DEFAULT_USER="kangdongho"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="/usr/local/bin/vim"
-alias ctags="/usr/local/bin/ctags"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    alias vim="/usr/local/bin/vim"
+    alias ctags="/usr/local/bin/ctags"
+fi
