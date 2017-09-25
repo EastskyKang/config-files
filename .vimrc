@@ -71,6 +71,7 @@ set expandtab
 set nu
 
 set mouse=a
+set backspace=indent,eol,start
 
 " turn on NERDTREE on startup 
 autocmd VimEnter * NERDTree
@@ -82,7 +83,7 @@ if has("autocmd")
 endif
 
 " clipboard
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " markdown preview
 let vim_markdown_preview_github=1
@@ -91,4 +92,13 @@ let vim_markdown_preview_github=1
 let g:NERDTreeMouseMode=3 
 
 " turn on Tagbar
+if has("unix")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        " mac os
+        let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+    endif
+endif
+
+let g:tagbar_width=26
 autocmd VimEnter * Tagbar
