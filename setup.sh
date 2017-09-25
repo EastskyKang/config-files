@@ -1,11 +1,13 @@
 #!/bin/sh
 
+# ----------------------------------------------------------------------------------------------------
 # vundle install 
-echo installing vundle...
+echo install vundle...
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# ----------------------------------------------------------------------------------------------------
 # zsh and oh-my-zsh
-echo installing zsh and oh-my-zsh
+echo install zsh and oh-my-zsh
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # ubuntu
@@ -31,14 +33,24 @@ fi
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# ----------------------------------------------------------------------------------------------------
+# poewerline fonts install
+echo install poewrline fonts 
+
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+# ----------------------------------------------------------------------------------------------------
 # softlink 
-echo copying config files to home directory...
+echo copy config files to home directory...
 
 # TODO change path
-rm ~/.profile
-rm ~/.vimrc
-rm ~/.zshrc
-
 ln -s ~/git/config-files/.profile ~/.profile
 ln -s ~/git/config-files/.vimrc ~/.vimrc
 ln -s ~/git/config-files/.zshrc ~/.zshrc
