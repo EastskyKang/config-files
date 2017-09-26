@@ -55,6 +55,9 @@ ZSH_THEME="agnoster"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+# [[ -e ~/.profile ]]
+#emulate sh -c 'source ~/.profile'
+source ~/.profile
 
 # User configuration
 
@@ -85,7 +88,3 @@ export DEFAULT_USER="kangdongho"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    alias vim="/usr/local/bin/vim"
-    alias ctags="/usr/local/bin/ctags"
-fi
