@@ -60,8 +60,9 @@ echo installing ...
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # ubuntu
-    sudo apt-get install vim ctags
-    sudo apt-get install build-essentials terminator cmake
+    sudo apt-get install vim ctags                              # vim
+    sudo apt-get install build-essentials terminator cmake      # tools
+    sudo apt-get install g++-7                                  # for rai
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # mac os
     brew install vim ctags 

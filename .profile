@@ -11,3 +11,4 @@ export RAI_ROOT=/home/kangd/git/rai
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source virtualenvwrapper.sh
+export RAI_GRAPHICS_OPENGL_ROOT=/home/kangd/git/raigraphics_opengl
