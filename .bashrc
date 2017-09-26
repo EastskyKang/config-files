@@ -116,4 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# source profile for env variable
 source ~/.profile
