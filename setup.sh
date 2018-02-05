@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # ----------------------------------------------------------------------------------------------------
 # vundle install 
@@ -60,6 +60,9 @@ echo installing ...
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # ubuntu
+    sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+    sudo apt-get update 
+    sudo apt-get install gcc-7
     sudo apt-get install vim ctags                              # vim
     sudo apt-get install build-essentials terminator cmake      # tools
     sudo apt-get install g++-7                                  # for rai
