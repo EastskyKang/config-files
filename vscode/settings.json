@@ -1,4 +1,10 @@
 {
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\bash.exe",
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline"
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
+    "C_Cpp.updateChannel": "Insiders",
+    "git.autofetch": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    }
 }
